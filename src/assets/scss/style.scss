@@ -10,6 +10,7 @@ body {
 
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1.4rem;
+    line-height: 1.5;
     color: $white;
 }
 
@@ -24,6 +25,9 @@ body {
 @import "blocks/page";
 @import "blocks/header";
 @import "blocks/sidebar";
+@import "blocks/profile";
+@import "blocks/social";
+@import "blocks/btn";
 @import "blocks/main";
 @import "blocks/container";
 
