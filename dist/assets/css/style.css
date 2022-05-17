@@ -701,6 +701,93 @@ body {
     text-align: right;
 }
 
+.add-post {
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.45);
+    background-color: #121212;
+    border-radius: 5px;
+}
+
+.add-post__form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.add-post__form-actions {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+.add-post__textarea {
+    display: block;
+    width: 80%;
+    height: 26px;
+    border: none;
+    background: transparent;
+    resize: none;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.add-post__textarea::-webkit-input-placeholder {
+    color: #D2D2D2;
+}
+
+.add-post__textarea::-moz-placeholder {
+    color: #D2D2D2;
+}
+
+.add-post__textarea:-ms-input-placeholder {
+    color: #D2D2D2;
+}
+
+.add-post__textarea::-ms-input-placeholder {
+    color: #D2D2D2;
+}
+
+.add-post__textarea::placeholder {
+    color: #D2D2D2;
+}
+
+.add-post__file, .add-post__send {
+    display: block;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.2s linear;
+}
+
+.add-post__file {
+    background: #EBEBEB url("../images/icon-file.svg") center no-repeat;
+}
+
+.add-post__file input {
+    display: none;
+}
+
+.add-post__file:hover {
+    background-color: #dedede;
+}
+
+.add-post__send {
+    margin-left: 1.5rem;
+    background-color: #3137C9;
+    padding: 0;
+}
+
+.add-post__send:hover {
+    background-color: #2c31b4;
+}
+
 .main {
     padding-top: 10rem;
     padding-left: 300px;
