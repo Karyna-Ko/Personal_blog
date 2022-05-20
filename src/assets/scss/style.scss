@@ -20,6 +20,24 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.title_fz16 {
+    color: $white;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    font-weight: 500;
+
+}
+
 
 /* Blocks */
 @import "blocks/page";
@@ -36,6 +54,8 @@ body {
 @import "blocks/post";
 @import "blocks/embed";
 @import "blocks/pagination";
+@import "blocks/related";
+@import "blocks/comments";
 @import "blocks/main";
 @import "blocks/container";
 

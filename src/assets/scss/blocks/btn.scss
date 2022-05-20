@@ -13,7 +13,6 @@
     font-weight: 500;
     line-height: 1.1;
     color:$white;
-    text-decoration: none;
     transition: background-color .2s linear;
     &--red {
         background-color: #ED3024;
@@ -28,5 +27,9 @@
         &:hover {
             background-color:darken($blue, 5%);
         }
+    }
+    &--rounded {
+        border-radius: 0.41em;
+        padding: 0.7rem  1.25rem;
     }
 }
