@@ -1,9 +1,15 @@
 .page {
     overflow: hidden;
-
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &__title {
         color: $white;
         margin-bottom: 3rem;
         font-size: 2.1em;
+        &--center {
+            text-align: center;
+        }
     }
 }
