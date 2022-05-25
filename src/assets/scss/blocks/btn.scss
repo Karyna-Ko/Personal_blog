@@ -21,14 +21,14 @@
     &--red {
         background-color: #ED3024;
         box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
-        &:hover {
+        &:hover, &:focus {
             background-color:darken(#ED3024, 5%);
         }
     }
     &--blue {
         background-color: $blue;
         box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
-        &:hover {
+        &:hover, &:focus {
             background-color:darken($blue, 5%);
         }
     }

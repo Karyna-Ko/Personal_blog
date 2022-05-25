@@ -399,12 +399,23 @@ a:hover {
 /* Blocks */
 .page {
     overflow: hidden;
+    min-height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .page__title {
     color: #fff;
     margin-bottom: 3rem;
     font-size: 2.1em;
+}
+
+.page__title--center {
+    text-align: center;
 }
 
 .header {
@@ -1086,6 +1097,15 @@ a:hover {
     position: relative;
 }
 
+.form__group--md {
+    margin-bottom: 2.5rem;
+}
+
+.form--auth {
+    max-width: 28rem;
+    margin: 0 auto;
+}
+
 .form__control {
     display: block;
     width: 100%;
@@ -1138,6 +1158,23 @@ a:hover {
     bottom: 0;
     z-index: 1;
     transition: width 0.5s linear;
+}
+
+.form__footer--center {
+    text-align: center;
+}
+
+.form__footer-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.form__footer-list li {
+    margin: 0.5rem;
 }
 
 .comments {
@@ -1271,6 +1308,39 @@ a:hover {
 .work__footer {
     margin-top: auto;
     text-align: right;
+}
+
+.cabinet {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.cabinet__form {
+    width: 34rem;
+}
+
+.cabinet__avatar {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-left: 11rem;
+}
+
+.cabinet__avatar img {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.cabinet__file {
+    font-weight: 400;
+    font-size: 1.4rem;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: #3137C9;
+    cursor: pointer;
+}
+
+.cabinet__file input {
+    display: none;
 }
 
 .main {

@@ -14,7 +14,7 @@
     
     <title>Personal blog</title>
 </head>
-<body>
+<body class="no-scroll">
 
     <div class="page">
         <header class="header">
@@ -251,8 +251,38 @@
             </div>
         </main>
     </div>
-
-
+            <div class="modal">
+                <div class="modal__content">
+                    <span class="modal__close"></span>
+                <form action="/" class="form" method="post" >
+                <div class="form__group form__group--md">
+                    <input type="text" class="form__control" placeholder="Ваше имя">
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group form__group--md">
+                    <input type="email" class="form__control" placeholder="Ваш e-mail">
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group form__group--md">
+                    <textarea type="email" class="form__control form__control--textarea" placeholder="Текст сообщения"></textarea>
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__footer">
+                    <div class="form__group form__group--md">
+                        <button class="btn btn--blue btn--rounded">Отправить</button>
+                    </div> 
+                </div>
+                </form>
+                <ul class="modal__footer">
+                    <li>
+                        e-mail: <a class="modal__mail" href=mailto:info@mywebsite.ru"">info@mywebsite.ru</a>
+                    </li>
+                    <li>
+                        тел: <a href="tel:94323285622">+943-232-856-22</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
