@@ -9,21 +9,22 @@
         display: flex;
         align-items: center;
         &-actions {
+            width: 120px;
+            flex-shrink: 0;
             display: flex;
             justify-content: flex-end;
-            width: 20%;
         }
     }
     &__textarea {
         display: block;
-        width: 80%;
-        height: 26px;
+        flex-grow: 1;        height: 26px;
         border: none;
         background: transparent;
         resize: none;
         font-family: inherit;
         font-size: 1.5rem;
         color: $white;
+        overflow: hidden;
         &::placeholder {
             color: #D2D2D2;
         }
