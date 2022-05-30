@@ -1,7 +1,14 @@
 .cabinet {
     display: flex;
+    @include breakpoint ($mobile-bp) {
+        flex-direction: column;
+    }
     &__form {
         width: 34rem;
+        @include breakpoint ($mobile-bp) {
+            order: 2;
+            width: auto;
+        }
     }
 
     &__avatar {
@@ -11,6 +18,10 @@
         img {
             display: block;
             margin-bottom: 1.5rem;    
+        }
+        @include breakpoint ($mobile-bp) {
+            padding-left: 0;
+            order: 1;
         }
     }
     &__file {
@@ -23,24 +34,4 @@
             display: none;
         }
     }
-}
-.form {
-
-    &__group {
-    }
-
-    &__group--md {
-    }
-
-    &__control {
-    }
-
-    &__line {
-    }
-}
-.btn {
-}
-.btn--blue {
-}
-.btn--rounded {
 }

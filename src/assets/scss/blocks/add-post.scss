@@ -5,14 +5,20 @@
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.45);
     background-color: $secondary;
     border-radius: 5px;
+    @include breakpoint ($mobile-bp) {
+        padding: 1.5rem;
+    }
     &__form {
         display: flex;
         align-items: center;
         &-actions {
-            width: 120px;
+            width: 12rem;
             flex-shrink: 0;
             display: flex;
             justify-content: flex-end;
+            @include breakpoint ($mobile-bp) {
+                width: 9rem;
+            }
         }
     }
     &__textarea {
@@ -38,6 +44,10 @@
         border-radius: 50%;
 
         transition: background-color .2s linear;
+        @include breakpoint ($mobile-bp) {
+            width: 3.4rem;
+            height: 3.4rem;
+        }
     }
     &__file {
         background: #EBEBEB url('../images/icon-file.svg') center no-repeat;
@@ -49,14 +59,23 @@
         &:hover {
             background-color: darken(#EBEBEB,5%);
         }
+        @include breakpoint ($mobile-bp) {
+            background-size: 18px;
+        }
     }
 
     &__send {
+        background: $blue url('../images/send.svg') center no-repeat;
         margin-left: 1.5rem;
         background-color: $blue;
         padding: 0;
+        font-size: 0;
+        color:transparent;
         &:hover {
             background-color: darken($blue,5%);
+        }
+        @include breakpoint ($mobile-bp) {
+            background-size: 40px;
         }
     }
 }

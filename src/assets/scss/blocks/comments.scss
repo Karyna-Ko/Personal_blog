@@ -48,8 +48,6 @@
             z-index: 1;
             transition: width .5s linear;
         }
-        &__footer {
-        }
     
         &__footer--center {
             text-align: center;
@@ -74,6 +72,9 @@
         > .comments {
             padding-left: 3rem;
             margin-top: 3rem;
+            @include breakpoint ($mobile-bp) {
+                padding-left: 1.5rem;
+            }
         }  
     }
     &__header {
