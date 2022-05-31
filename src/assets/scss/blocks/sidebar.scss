@@ -7,6 +7,7 @@
     top: 0;
     left: 0;
     z-index: $z-index-sidebar;
+    overflow: auto;
     @include breakpoint($tablet-bp) {
         top: 4rem;
         height: calc(100vh - 4rem);
