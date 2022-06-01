@@ -10,7 +10,7 @@
     }
     &__form {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         &-actions {
             width: 12rem;
             flex-shrink: 0;
@@ -23,7 +23,8 @@
     }
     &__textarea {
         display: block;
-        flex-grow: 1;        height: 26px;
+        flex-grow: 1;        
+        height: 34px;
         border: none;
         background: transparent;
         resize: none;

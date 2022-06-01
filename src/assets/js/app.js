@@ -6,6 +6,7 @@ burgerBtn.addEventListener('click', function(){
 	burgerBtn.classList.toggle('active');
     sideBar.classList.toggle('active');
     pageDarken.classList.toggle('active');
+    body.classList.toggle('no-scroll');
 }); 
 
 // Modal windows
@@ -26,12 +27,7 @@ modalBtn.forEach(item => {
         });
         
         modal.classList.add('show');
-        body.classList.add('no-scroll');
-
-        setTimeout(() => {
-            modalContent.style.transform = 'none';
-        }, 1);
-        
+        body.classList.add('no-scroll');        
     }); 
 });
 
@@ -55,9 +51,22 @@ modal.forEach(item => {
 function closeModal(currentModal) {
     let modalContent = currentModal.querySelector('.modal__content');
     modalContent.removeAttribute('style');
-    setTimeout (() => {
+
         currentModal.classList.remove('show');
         body.classList.remove('no-scroll');
-    },250);
-    
 } 
+
+// Textarea
+
+const textArea = document.querySelectorAll('[data-autoresize]');
+
+textArea.forEach(item => {
+    let textAreaH = item.offsetHeight;
+
+    item.addEventListener('input', event => {
+        let $this = event.target;
+
+        $this.style.height = textAreaH + "px";
+        $this.style.height = $this.scrollHeight + "px";
+    });
+});

@@ -899,7 +899,7 @@ a:hover {
 }
 .add-post__form {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 .add-post__form-actions {
   width: 12rem;
@@ -915,7 +915,7 @@ a:hover {
 .add-post__textarea {
   display: block;
   flex-grow: 1;
-  height: 26px;
+  height: 34px;
   border: none;
   background: transparent;
   resize: none;
@@ -1474,6 +1474,9 @@ a:hover {
 .modal.show {
   display: flex;
 }
+.modal.show .social--visible {
+  display: flex;
+}
 .modal__content {
   position: relative;
   width: 100%;
@@ -1486,6 +1489,16 @@ a:hover {
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
+}
+@media (max-width: 991px) {
+  .modal__content {
+    padding: 5rem 3rem 3rem;
+  }
+}
+@media (max-width: 357px) {
+  .modal__content {
+    padding: 5rem 1rem 3rem;
+  }
 }
 .modal__content--contact {
   padding-bottom: 8rem;

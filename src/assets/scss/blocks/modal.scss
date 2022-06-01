@@ -16,10 +16,10 @@
     padding: 1rem;
     &.show {
         display: flex;
+        .social--visible {
+            display: flex;
+        }
     }
-
-   
-    
     &__content {
         position: relative;
         width: 100%;
@@ -28,6 +28,12 @@
         background-color: $primary;
         box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
+        @include breakpoint ($tablet-bp) {
+            padding: 5rem 3rem 3rem;
+        }
+        @include breakpoint ($mobile-bp-sm) {
+            padding: 5rem 1rem 3rem;
+        }
 
         &--contact {
             padding-bottom: 8rem;
